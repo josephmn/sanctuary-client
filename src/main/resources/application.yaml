@@ -1,0 +1,22 @@
+server:
+  port: 9393
+spring:
+  application:
+    name: sanctuary-client
+    version: "@project.version@"
+  profiles:
+    active: dev
+  banner:
+    location: classpath:banner/banner-${SPRING_PROFILES_ACTIVE}.txt
+  output:
+    ansi:
+      enabled: ALWAYS
+  r2dbc:
+    url: ${MYSQL_HOST}
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+    pool:
+      enabled: true
+      max-size: 10
+      initial-size: 5
+      max-idle-time: 10m
