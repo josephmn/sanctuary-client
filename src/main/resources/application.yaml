@@ -4,8 +4,6 @@ spring:
   application:
     name: sanctuary-client
     version: "@project.version@"
-  profiles:
-    active: dev
   banner:
     location: classpath:banner/banner-${SPRING_PROFILES_ACTIVE}.txt
   output:
@@ -20,3 +18,7 @@ spring:
       max-size: 10
       initial-size: 5
       max-idle-time: 10m
+created:
+  by: Joseph Magallanes
+  email: josephcarlos.jcmn@gmail.com
+  date: 2026-09-14
