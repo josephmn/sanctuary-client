@@ -9,6 +9,11 @@ spring:
   output:
     ansi:
       enabled: ALWAYS
+  flyway:
+    enabled: true
+    url: ${MYSQL_SOURCE}
+    user: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
   r2dbc:
     url: ${MYSQL_HOST}
     username: ${MYSQL_USER}
